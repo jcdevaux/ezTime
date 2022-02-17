@@ -1398,7 +1398,7 @@ uint16_t Timezone::ms(time_t t /*= TIME_NOW */) {
 	return 0;
 }
 
-uint32_t Timezone::micros(time_t t /*= TIME_NOW */) {
+uint32_t Timezone::mus(time_t t /*= TIME_NOW */) {
 	// Note that here passing anything but TIME_NOW or LAST_READ is pointless
 	if (t == TIME_NOW) { nowUTC(); return _last_read_mus; }
 	if (t == LAST_READ) return _last_read_mus;
