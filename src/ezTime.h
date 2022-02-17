@@ -233,6 +233,7 @@ class Timezone {
 		uint8_t minute(time_t t = TIME_NOW, const ezLocalOrUTC_t local_or_utc = LOCAL_TIME);
 		uint8_t month(time_t t = TIME_NOW, const ezLocalOrUTC_t local_or_utc = LOCAL_TIME);
 		uint16_t ms(time_t t = TIME_NOW);
+		uint32_t micros(time_t t = TIME_NOW);
 		time_t now();
 		uint8_t second(time_t t = TIME_NOW, const ezLocalOrUTC_t local_or_utc = LOCAL_TIME);
 		void setDefault();
